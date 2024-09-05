@@ -84,11 +84,23 @@ void My_Paint::scene()
     //верхня точка
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
     glPointSize(10.0);
     glColor4f(0.0, 0.0, 0.0, 0.5);
 
     glBegin(GL_POINTS);
     glVertex3f(150.0, 130.0, 0.0);
+    glEnd();
+
+    //нижня точка
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
+    glPointSize(10.0);
+    glColor4f(0.0, 0.0, 0.0, 0.5);
+
+    glBegin(GL_POINTS);
+    glVertex3f(135.0, 85.0, 0.0);
     glEnd();
 
 }
