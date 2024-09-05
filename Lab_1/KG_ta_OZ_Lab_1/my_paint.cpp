@@ -8,7 +8,7 @@ My_Paint::My_Paint(QWidget *parent)
 void My_Paint::initializeGL()
 {
     initializeOpenGLFunctions();
-    glClearColor(1.0, 0.84, 0.0, 1.0);
+    glClearColor(0.0, 128.0, 128.0, 1.0);
     glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 }
 
@@ -30,41 +30,44 @@ void My_Paint::paintGL()
 
 void My_Paint::scene()
 {
-    glColor3f(1.0, 0.0, 0.0); // Червоний колір
+    //зелений многокутник
+    glColor3f(0.0, 255.0, 0.0);
 
     glBegin(GL_POLYGON);
-    glVertex3f(50.0, 350.0, 0.0);
-    glVertex3f(250.0, 350.0, 0.0);
-    glVertex3f(250.0, 150.0, 0.0);
-    glVertex3f(50.0, 150.0, 0.0);
+    glVertex3f(90.0, 120.0, 0.0);
+    glVertex3f(180.0, 190.0, 0.0);
+    glVertex3f(310.0, 130.0, 0.0);
+    glVertex3f(230.0, 90.0, 0.0);
+    glVertex3f(255.0, 25.0, 0.0);
+    glVertex3f(135.0, 15.0, 0.0);
     glEnd();
 
     // Інші елементи сцени
 
     //Стрілка вгору
-    glColor3f(0.0,0.75,1.0); //Обираємо голубий колір
-    glBegin(GL_POLYGON);
-    glVertex3f(400.0,275.0,0.0); //Координати трикутника
-    glVertex3f(475.0,375.0,0.0);
-    glVertex3f(550.0,275.0,0.0);
-    glEnd();
-    glBegin(GL_POLYGON);
-    glVertex3f(435.0,275.0,0.0); //Координати квадрата
-    glVertex3f(515.0,275.0,0.0);
-    glVertex3f(515.0,175.0,0.0);
-    glVertex3f(435.0,175.0,0.0);
-    glEnd();
-    //Стрілка ліворуч
-    glColor3f(0.0,0.75,1.0); //Обираємо голубий колір
-    glBegin(GL_POLYGON);
-    glVertex3f(350.0,25.0,0.0); //Координати трикутника
-    glVertex3f(250.0,100.0,0.0);
-    glVertex3f(350.0,175.0,0.0);
-    glEnd();
-    glBegin(GL_POLYGON);
-    glVertex3f(350.0,140.0,0.0); //Координати квадрата
-    glVertex3f(525.0,140.0,0.0);
-    glVertex3f(525.0,70.0,0.0);
-    glVertex3f(350.0,70.0,0.0);
-    glEnd();
+//    glColor3f(0.0,0.75,1.0); //Обираємо голубий колір
+//    glBegin(GL_POLYGON);
+//    glVertex3f(400.0,275.0,0.0); //Координати трикутника
+//    glVertex3f(475.0,375.0,0.0);
+//    glVertex3f(550.0,275.0,0.0);
+//    glEnd();
+//    glBegin(GL_POLYGON);
+//    glVertex3f(435.0,275.0,0.0); //Координати квадрата
+//    glVertex3f(515.0,275.0,0.0);
+//    glVertex3f(515.0,175.0,0.0);
+//    glVertex3f(435.0,175.0,0.0);
+//    glEnd();
+//    //Стрілка ліворуч
+//    glColor3f(0.0,0.75,1.0); //Обираємо голубий колір
+//    glBegin(GL_POLYGON);
+//    glVertex3f(350.0,25.0,0.0); //Координати трикутника
+//    glVertex3f(250.0,100.0,0.0);
+//    glVertex3f(350.0,175.0,0.0);
+//    glEnd();
+//    glBegin(GL_POLYGON);
+//    glVertex3f(350.0,140.0,0.0); //Координати квадрата
+//    glVertex3f(525.0,140.0,0.0);
+//    glVertex3f(525.0,70.0,0.0);
+//    glVertex3f(350.0,70.0,0.0);
+//    glEnd();
 }
