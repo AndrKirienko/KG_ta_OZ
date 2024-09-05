@@ -1,8 +1,22 @@
 #include "my_paint.h"
+#include <GL/gl.h>
+#include <cmath>
 
 My_Paint::My_Paint(QWidget *parent)
     : QOpenGLWidget(parent)
 {
+}
+
+void drawCircle(float cx, float cy, float radius, int segments = 36) {
+    glBegin(GL_TRIANGLE_FAN);
+    glVertex2f(cx, cy); // Центр кола
+    for (int i = 0; i <= segments; ++i) {
+        float angle = 2.0f * M_PI * i / segments;
+        float x = cx + radius * cosf(angle);
+        float y = cy + radius * sinf(angle);
+        glVertex2f(x, y);
+    }
+    glEnd();
 }
 
 void My_Paint::initializeGL()
@@ -61,7 +75,26 @@ void My_Paint::scene()
     glVertex3f(230.0, 90.0, 0.0);
     glEnd();
 
+    //верхне-нижнє коло
+    glEnable(GL_LINE_SMOOTH);
+    glHint(GL_LINE_SMOOTH_HINT, GL_NICEST);
+    glColor3f(0.0, 0.0, 0.0);
+    drawCircle(110.0, 130.0, 5.0);
+    glDisable(GL_LINE_SMOOTH);
+
+    //верхне-верхнє коло
+    glEnable(GL_LINE_SMOOTH);
+    glHint(GL_LINE_SMOOTH_HINT, GL_NICEST);
+    glColor3f(0.0, 0.0, 0.0);
+    drawCircle(60.0, 190.0, 5.0);
+    glDisable(GL_LINE_SMOOTH);
+
+
     //верхня лінія
+
+    glEnable(GL_LINE_SMOOTH);
+    glHint(GL_LINE_SMOOTH_HINT, GL_NICEST);
+
     glLineWidth(10.0);
 
     glColor3f(0.0, 0.0, 0.0);
@@ -80,6 +113,8 @@ void My_Paint::scene()
     glVertex3f(115.0, 70.0, 0.0);
     glVertex3f(50.0, 40.0, 0.0);
     glEnd();
+
+    glDisable(GL_LINE_SMOOTH);
 
     //верхня точка
     glEnable(GL_BLEND);

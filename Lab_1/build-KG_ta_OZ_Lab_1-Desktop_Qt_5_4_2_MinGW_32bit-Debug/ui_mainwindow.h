@@ -34,15 +34,15 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(330, 220);
+        MainWindow->resize(363, 244);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         pushButton = new QPushButton(centralWidget);
         pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(260, 230, 93, 28));
+        pushButton->setGeometry(QRect(210, 170, 93, 28));
         drawButton = new QPushButton(centralWidget);
         drawButton->setObjectName(QStringLiteral("drawButton"));
-        drawButton->setGeometry(QRect(260, 190, 93, 28));
+        drawButton->setGeometry(QRect(210, 120, 93, 28));
         label = new QLabel(centralWidget);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(80, 20, 241, 16));

@@ -1,6 +1,6 @@
 #include <QApplication>
 #include "mainwindow.h"
-#include <cstddef>  // Для NULL
+#include <cstddef>
 
 
 int main(int argc, char *argv[])

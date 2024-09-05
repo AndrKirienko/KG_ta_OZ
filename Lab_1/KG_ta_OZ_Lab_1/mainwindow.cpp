@@ -9,8 +9,6 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     myPaintWidget = new My_Paint(this);
         setCentralWidget(myPaintWidget);
-
-        // Підключаємо сигнал кнопки до слота
         connect(ui->drawButton, &QPushButton::clicked, this, &MainWindow::on_drawButton_clicked);
 }
 
