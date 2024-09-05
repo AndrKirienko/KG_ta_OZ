@@ -61,7 +61,7 @@ void My_Paint::scene()
     glVertex3f(230.0, 90.0, 0.0);
     glEnd();
 
-    //центральна лінія
+    //верхня лінія
     glLineWidth(10.0);
 
     glColor3f(0.0, 0.0, 0.0);
@@ -71,33 +71,14 @@ void My_Paint::scene()
     glVertex3f(60.0, 190.0, 0.0);
     glEnd();
 
+    //верхня лінія
+    glLineWidth(10.0);
 
-    // Інші елементи сцени
+    glColor3f(0.0, 0.0, 0.0);
 
-    //Стрілка вгору
-//    glColor3f(0.0,0.75,1.0); //Обираємо голубий колір
-//    glBegin(GL_POLYGON);
-//    glVertex3f(400.0,275.0,0.0); //Координати трикутника
-//    glVertex3f(475.0,375.0,0.0);
-//    glVertex3f(550.0,275.0,0.0);
-//    glEnd();
-//    glBegin(GL_POLYGON);
-//    glVertex3f(435.0,275.0,0.0); //Координати квадрата
-//    glVertex3f(515.0,275.0,0.0);
-//    glVertex3f(515.0,175.0,0.0);
-//    glVertex3f(435.0,175.0,0.0);
-//    glEnd();
-//    //Стрілка ліворуч
-//    glColor3f(0.0,0.75,1.0); //Обираємо голубий колір
-//    glBegin(GL_POLYGON);
-//    glVertex3f(350.0,25.0,0.0); //Координати трикутника
-//    glVertex3f(250.0,100.0,0.0);
-//    glVertex3f(350.0,175.0,0.0);
-//    glEnd();
-//    glBegin(GL_POLYGON);
-//    glVertex3f(350.0,140.0,0.0); //Координати квадрата
-//    glVertex3f(525.0,140.0,0.0);
-//    glVertex3f(525.0,70.0,0.0);
-//    glVertex3f(350.0,70.0,0.0);
-//    glEnd();
+    glBegin(GL_LINES);
+    glVertex3f(115.0, 70.0, 0.0);
+    glVertex3f(50.0, 40.0, 0.0);
+    glEnd();
+
 }
