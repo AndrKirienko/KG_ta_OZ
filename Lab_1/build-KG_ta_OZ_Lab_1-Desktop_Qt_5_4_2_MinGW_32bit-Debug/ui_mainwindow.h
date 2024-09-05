@@ -26,7 +26,7 @@ class Ui_MainWindow
 public:
     QWidget *centralWidget;
     QPushButton *pushButton;
-    QPushButton *pushButton_2;
+    QPushButton *drawButton;
     QLabel *label;
     QLabel *label_2;
 
@@ -40,9 +40,9 @@ public:
         pushButton = new QPushButton(centralWidget);
         pushButton->setObjectName(QStringLiteral("pushButton"));
         pushButton->setGeometry(QRect(260, 230, 93, 28));
-        pushButton_2 = new QPushButton(centralWidget);
-        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-        pushButton_2->setGeometry(QRect(260, 190, 93, 28));
+        drawButton = new QPushButton(centralWidget);
+        drawButton->setObjectName(QStringLiteral("drawButton"));
+        drawButton->setGeometry(QRect(260, 190, 93, 28));
         label = new QLabel(centralWidget);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(80, 20, 241, 16));
@@ -66,7 +66,7 @@ public:
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0));
         pushButton->setText(QApplication::translate("MainWindow", "\320\222\320\270\321\205\321\226\320\264", 0));
-        pushButton_2->setText(QApplication::translate("MainWindow", "\320\235\320\260\320\274\320\260\320\273\321\216\320\262\320\260\321\202\320\270", 0));
+        drawButton->setText(QApplication::translate("MainWindow", "\320\235\320\260\320\274\320\260\320\273\321\216\320\262\320\260\321\202\320\270", 0));
         label->setText(QApplication::translate("MainWindow", "\320\227\320\260\320\262\320\264\320\260\320\275\320\275\321\217 \320\264\320\276 \320\273\320\260\320\261\320\276\321\200\320\260\321\202\320\276\321\200\320\275\320\276\321\227 \321\200\320\276\320\261\320\276\321\202\320\270", 0));
         label_2->setText(QApplication::translate("MainWindow", "	\320\222\320\270\320\272\320\276\321\200\320\270\321\201\321\202\320\276\320\262\321\203\321\216\321\207\320\270 \320\277\321\200\320\270\320\274\321\226\321\202\320\270\320\262\320\270 \302\253\321\202\320\276\321\207\320\272\320\260\302\273, \302\253\320\273\321\226\320\275\321\226\321\217\302\273, \n"
 " \302\253\321\202\321\200\320\270\320\272\321\203\321\202\320\275\320\270\320\272\302\273, \302\253\321\207\320\276\321\202\320\270\321\200\320\270\320\272\321\203\321\202\320\275\320\270\320\272\302\273 \321\202\320\260 \302\253\320\274\320\275\320\276\320\263\320\276\320\272\321\203\321\202\320\275\320\270\320\272\302\273 \n"

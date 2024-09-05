@@ -45,11 +45,13 @@ OBJECTS_DIR   = debug
 
 SOURCES       = ..\KG_ta_OZ_Lab_1\main.cpp \
 		..\KG_ta_OZ_Lab_1\mainwindow.cpp \
-		..\KG_ta_OZ_Lab_1\my_paint.cpp debug\moc_mainwindow.cpp
+		..\KG_ta_OZ_Lab_1\my_paint.cpp debug\moc_mainwindow.cpp \
+		debug\moc_my_paint.cpp
 OBJECTS       = debug/main.o \
 		debug/mainwindow.o \
 		debug/my_paint.o \
-		debug/moc_mainwindow.o
+		debug/moc_mainwindow.o \
+		debug/moc_my_paint.o
 
 DIST          =  ..\KG_ta_OZ_Lab_1\mainwindow.h \
 		..\KG_ta_OZ_Lab_1\my_paint.h ..\KG_ta_OZ_Lab_1\main.cpp \
@@ -93,7 +95,7 @@ dist:
 	$(ZIP) KG_ta_OZ_Lab_1.zip $(SOURCES) $(DIST) ..\KG_ta_OZ_Lab_1\KG_ta_OZ_Lab_1.pro ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\features\spec_pre.prf ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\qdevice.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\features\device_config.prf ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\common\shell-win32.conf ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\qconfig.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_axbase.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_axbase_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_axcontainer.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_axcontainer_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_axserver.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_axserver_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_bluetooth.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_bluetooth_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_bootstrap_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_clucene_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_concurrent.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_concurrent_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_core.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_core_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_dbus.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_dbus_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_declarative.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_declarative_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_designer.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_designer_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_designercomponents_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_enginio.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_enginio_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_gui.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_gui_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_help.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_help_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_location.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_location_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_multimedia.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_multimedia_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_multimediawidgets.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_multimediawidgets_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_network.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_network_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_nfc.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_nfc_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_opengl.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_opengl_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_openglextensions.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_openglextensions_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_platformsupport_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_positioning.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_positioning_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_printsupport.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_printsupport_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_qml.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_qml_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_qmldevtools_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_qmltest.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_qmltest_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_qtmultimediaquicktools_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_quick.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_quick_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_quickparticles_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_quickwidgets.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_quickwidgets_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_script.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_script_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_scripttools.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_scripttools_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_sensors.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_sensors_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_serialport.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_serialport_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_sql.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_sql_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_svg.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_svg_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_testlib.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_testlib_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_uitools.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_uitools_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_webchannel.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_webchannel_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_webkit.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_webkit_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_webkitwidgets.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_webkitwidgets_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_websockets.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_websockets_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_webview.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_webview_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_widgets.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_widgets_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_winextras.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_winextras_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_xml.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_xml_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_xmlpatterns.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\modules\qt_lib_xmlpatterns_private.pri ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\features\qt_functions.prf ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\features\qt_config.prf ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\features\win32\qt_config.prf ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\win32-g++\qmake.conf ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\features\spec_post.prf ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\features\exclusive_builds.prf ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\features\default_pre.prf ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\features\win32\default_pre.prf ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\features\resolve_config.prf ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\features\exclusive_builds_post.prf ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\features\default_post.prf ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\features\build_pass.prf ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\features\win32\rtti.prf ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\features\precompile_header.prf ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\features\warn_on.prf ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\features\qt.prf ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\features\resources.prf ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\features\moc.prf ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\features\win32\opengl.prf ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\features\uic.prf ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\features\win32\windows.prf ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\features\testcase_targets.prf ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\features\exceptions.prf ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\features\yacc.prf ..\..\..\..\Educational_Programmes\OpenGL\5.4\mingw491_32\mkspecs\features\lex.prf ..\KG_ta_OZ_Lab_1\KG_ta_OZ_Lab_1.pro D:/Educational_Programmes/OpenGL/5.4/mingw491_32/lib/qtmaind.prl D:/Educational_Programmes/OpenGL/5.4/mingw491_32/lib/Qt5Cored.prl D:/Educational_Programmes/OpenGL/5.4/mingw491_32/lib/Qt5OpenGLd.prl D:/Educational_Programmes/OpenGL/5.4/mingw491_32/lib/Qt5Widgetsd.prl D:/Educational_Programmes/OpenGL/5.4/mingw491_32/lib/Qt5Guid.prl  NO_PCH_SOURCES RESOURCES HEADERS SOURCES OBJECTIVE_SOURCES FORMS YACCSOURCES YACCSOURCES LEXSOURCES 
 
 clean: compiler_clean 
-	-$(DEL_FILE) debug\main.o debug\mainwindow.o debug\my_paint.o debug\moc_mainwindow.o
+	-$(DEL_FILE) debug\main.o debug\mainwindow.o debug\my_paint.o debug\moc_mainwindow.o debug\moc_my_paint.o
 
 distclean: clean 
 	-$(DEL_FILE) $(DESTDIR_TARGET)
@@ -109,9 +111,9 @@ compiler_no_pch_compiler_make_all:
 compiler_no_pch_compiler_clean:
 compiler_rcc_make_all:
 compiler_rcc_clean:
-compiler_moc_header_make_all: debug/moc_mainwindow.cpp
+compiler_moc_header_make_all: debug/moc_mainwindow.cpp debug/moc_my_paint.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) debug\moc_mainwindow.cpp
+	-$(DEL_FILE) debug\moc_mainwindow.cpp debug\moc_my_paint.cpp
 debug/moc_mainwindow.cpp: ../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/QMainWindow \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/qmainwindow.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/qwidget.h \
@@ -217,34 +219,27 @@ debug/moc_mainwindow.cpp: ../../../../Educational_Programmes/OpenGL/5.4/mingw491
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qtouchdevice.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/qtabwidget.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qicon.h \
+		../KG_ta_OZ_Lab_1/my_paint.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/QOpenGLWidget \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/qopenglwidget.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/QWidget \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/QSurfaceFormat \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qsurfaceformat.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qopengl.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qt_windows.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qopengles2ext.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qopenglext.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/QOpenGLFunctions \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qopenglfunctions.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qopenglcontext.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/QObject \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/QScopedPointer \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qopenglversionfunctions.h \
 		../KG_ta_OZ_Lab_1/mainwindow.h
 	D:\Educational_Programmes\OpenGL\5.4\mingw491_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -ID:/Educational_Programmes/OpenGL/5.4/mingw491_32/mkspecs/win32-g++ -ID:/4_course/KG_ta_OZ/Lab_1/KG_ta_OZ_Lab_1 -ID:/Educational_Programmes/OpenGL/5.4/mingw491_32/include -ID:/Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtOpenGL -ID:/Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets -ID:/Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui -ID:/Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore -I. ..\KG_ta_OZ_Lab_1\mainwindow.h -o debug\moc_mainwindow.cpp
 
-compiler_moc_source_make_all:
-compiler_moc_source_clean:
-compiler_uic_make_all: ui_mainwindow.h
-compiler_uic_clean:
-	-$(DEL_FILE) ui_mainwindow.h
-ui_mainwindow.h: ../KG_ta_OZ_Lab_1/mainwindow.ui
-	D:\Educational_Programmes\OpenGL\5.4\mingw491_32\bin\uic.exe ..\KG_ta_OZ_Lab_1\mainwindow.ui -o ui_mainwindow.h
-
-compiler_yacc_decl_make_all:
-compiler_yacc_decl_clean:
-compiler_yacc_impl_make_all:
-compiler_yacc_impl_clean:
-compiler_lex_make_all:
-compiler_lex_clean:
-compiler_clean: compiler_moc_header_clean compiler_uic_clean 
-
-
-
-####### Compile
-
-debug/main.o: ../KG_ta_OZ_Lab_1/main.cpp ../KG_ta_OZ_Lab_1/mainwindow.h \
-		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/QMainWindow \
-		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/qmainwindow.h \
-		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/qwidget.h \
-		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qwindowdefs.h \
+debug/moc_my_paint.cpp: ../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/QOpenGLWidget \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/qopenglwidget.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qglobal.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qconfig.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qfeatures.h \
@@ -273,6 +268,9 @@ debug/main.o: ../KG_ta_OZ_Lab_1/main.cpp ../KG_ta_OZ_Lab_1/mainwindow.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qglobalstatic.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qmutex.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qnumeric.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/QWidget \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/qwidget.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qwindowdefs.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qobjectdefs.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qnamespace.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qobjectdefs_impl.h \
@@ -344,15 +342,170 @@ debug/main.o: ../KG_ta_OZ_Lab_1/main.cpp ../KG_ta_OZ_Lab_1/mainwindow.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qfiledevice.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qvector2d.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qtouchdevice.h \
-		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/qtabwidget.h \
-		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qicon.h \
-		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/QApplication \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/QSurfaceFormat \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qsurfaceformat.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qopengl.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qt_windows.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qopengles2ext.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qopenglext.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/QOpenGLFunctions \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qopenglfunctions.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qopenglcontext.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/QObject \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/QScopedPointer \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qopenglversionfunctions.h \
+		../KG_ta_OZ_Lab_1/my_paint.h
+	D:\Educational_Programmes\OpenGL\5.4\mingw491_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -ID:/Educational_Programmes/OpenGL/5.4/mingw491_32/mkspecs/win32-g++ -ID:/4_course/KG_ta_OZ/Lab_1/KG_ta_OZ_Lab_1 -ID:/Educational_Programmes/OpenGL/5.4/mingw491_32/include -ID:/Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtOpenGL -ID:/Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets -ID:/Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui -ID:/Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore -I. ..\KG_ta_OZ_Lab_1\my_paint.h -o debug\moc_my_paint.cpp
+
+compiler_moc_source_make_all:
+compiler_moc_source_clean:
+compiler_uic_make_all: ui_mainwindow.h
+compiler_uic_clean:
+	-$(DEL_FILE) ui_mainwindow.h
+ui_mainwindow.h: ../KG_ta_OZ_Lab_1/mainwindow.ui
+	D:\Educational_Programmes\OpenGL\5.4\mingw491_32\bin\uic.exe ..\KG_ta_OZ_Lab_1\mainwindow.ui -o ui_mainwindow.h
+
+compiler_yacc_decl_make_all:
+compiler_yacc_decl_clean:
+compiler_yacc_impl_make_all:
+compiler_yacc_impl_clean:
+compiler_lex_make_all:
+compiler_lex_clean:
+compiler_clean: compiler_moc_header_clean compiler_uic_clean 
+
+
+
+####### Compile
+
+debug/main.o: ../KG_ta_OZ_Lab_1/main.cpp ../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/QApplication \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/qapplication.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qcoreapplication.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qglobal.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qconfig.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qfeatures.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qsystemdetection.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qprocessordetection.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qcompilerdetection.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qtypeinfo.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qtypetraits.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qsysinfo.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qlogging.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qflags.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qatomic.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qbasicatomic.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qatomic_bootstrap.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qgenericatomic.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qatomic_msvc.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qatomic_armv7.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qatomic_armv6.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qatomic_armv5.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qatomic_ia64.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qatomic_mips.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qatomic_x86.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qatomic_cxx11.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qatomic_gcc.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qatomic_unix.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qglobalstatic.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qmutex.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qnumeric.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qstring.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qchar.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qbytearray.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qrefcount.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qnamespace.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qarraydata.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qstringbuilder.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qobject.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qobjectdefs.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qobjectdefs_impl.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qlist.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qalgorithms.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qiterator.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qbytearraylist.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qcoreevent.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qscopedpointer.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qmetatype.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qvarlengtharray.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qcontainerfwd.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qisenum.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qobject_impl.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qeventloop.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qwindowdefs.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qwindowdefs_win.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qpoint.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qsize.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qcursor.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/qdesktopwidget.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/qwidget.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qmargins.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qpaintdevice.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qrect.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qpalette.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qcolor.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qrgb.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qstringlist.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qdatastream.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qiodevice.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qpair.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qregexp.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qstringmatcher.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qbrush.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qvector.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qmatrix.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qpolygon.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qregion.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qline.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qtransform.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qpainterpath.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qimage.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qpixelformat.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qpixmap.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qsharedpointer.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qshareddata.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qhash.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qsharedpointer_impl.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qfont.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qfontmetrics.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qfontinfo.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/qsizepolicy.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qkeysequence.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qevent.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qvariant.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qmap.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qdebug.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qtextstream.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qlocale.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qset.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qcontiguouscache.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qurl.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qurlquery.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qfile.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qfiledevice.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qvector2d.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qtouchdevice.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qguiapplication.h \
-		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qinputmethod.h
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qinputmethod.h \
+		../KG_ta_OZ_Lab_1/mainwindow.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/QMainWindow \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/qmainwindow.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/qtabwidget.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qicon.h \
+		../KG_ta_OZ_Lab_1/my_paint.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/QOpenGLWidget \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/qopenglwidget.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/QWidget \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/QSurfaceFormat \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qsurfaceformat.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qopengl.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qt_windows.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qopengles2ext.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qopenglext.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/QOpenGLFunctions \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qopenglfunctions.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qopenglcontext.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/QObject \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/QScopedPointer \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qopenglversionfunctions.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\main.o ..\KG_ta_OZ_Lab_1\main.cpp
 
 debug/mainwindow.o: ../KG_ta_OZ_Lab_1/mainwindow.cpp ../KG_ta_OZ_Lab_1/mainwindow.h \
@@ -461,6 +614,22 @@ debug/mainwindow.o: ../KG_ta_OZ_Lab_1/mainwindow.cpp ../KG_ta_OZ_Lab_1/mainwindo
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qtouchdevice.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/qtabwidget.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qicon.h \
+		../KG_ta_OZ_Lab_1/my_paint.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/QOpenGLWidget \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/qopenglwidget.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/QWidget \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/QSurfaceFormat \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qsurfaceformat.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qopengl.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qt_windows.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qopengles2ext.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qopenglext.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/QOpenGLFunctions \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qopenglfunctions.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qopenglcontext.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/QObject \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/QScopedPointer \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qopenglversionfunctions.h \
 		ui_mainwindow.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/QVariant \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/QAction \
@@ -492,21 +661,16 @@ debug/mainwindow.o: ../KG_ta_OZ_Lab_1/mainwindow.cpp ../KG_ta_OZ_Lab_1/mainwindo
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/qstyle.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/qtabbar.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/qrubberband.h \
-		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/QMenuBar \
-		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/qmenubar.h \
-		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/qmenu.h \
-		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/QStatusBar \
-		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/qstatusbar.h \
-		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/QToolBar \
-		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/qtoolbar.h \
-		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/QWidget
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/QLabel \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/qlabel.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/QPushButton \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/qpushbutton.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/qabstractbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mainwindow.o ..\KG_ta_OZ_Lab_1\mainwindow.cpp
 
 debug/my_paint.o: ../KG_ta_OZ_Lab_1/my_paint.cpp ../KG_ta_OZ_Lab_1/my_paint.h \
-		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/QObject \
-		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qobject.h \
-		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qobjectdefs.h \
-		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qnamespace.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/QOpenGLWidget \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/qopenglwidget.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qglobal.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qconfig.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qfeatures.h \
@@ -535,7 +699,14 @@ debug/my_paint.o: ../KG_ta_OZ_Lab_1/my_paint.cpp ../KG_ta_OZ_Lab_1/my_paint.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qglobalstatic.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qmutex.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qnumeric.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/QWidget \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/qwidget.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qwindowdefs.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qobjectdefs.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qnamespace.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qobjectdefs_impl.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qwindowdefs_win.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qobject.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qstring.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qchar.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qbytearray.h \
@@ -553,10 +724,6 @@ debug/my_paint.o: ../KG_ta_OZ_Lab_1/my_paint.cpp ../KG_ta_OZ_Lab_1/my_paint.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qcontainerfwd.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qisenum.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qobject_impl.h \
-		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/QWidget \
-		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtWidgets/qwidget.h \
-		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qwindowdefs.h \
-		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qwindowdefs_win.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qmargins.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qpaintdevice.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qrect.h \
@@ -605,11 +772,26 @@ debug/my_paint.o: ../KG_ta_OZ_Lab_1/my_paint.cpp ../KG_ta_OZ_Lab_1/my_paint.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qfile.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qfiledevice.h \
 		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qvector2d.h \
-		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qtouchdevice.h
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qtouchdevice.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/QSurfaceFormat \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qsurfaceformat.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qopengl.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/qt_windows.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qopengles2ext.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qopenglext.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/QOpenGLFunctions \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qopenglfunctions.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qopenglcontext.h \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/QObject \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtCore/QScopedPointer \
+		../../../../Educational_Programmes/OpenGL/5.4/mingw491_32/include/QtGui/qopenglversionfunctions.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\my_paint.o ..\KG_ta_OZ_Lab_1\my_paint.cpp
 
 debug/moc_mainwindow.o: debug/moc_mainwindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\moc_mainwindow.o debug\moc_mainwindow.cpp
+
+debug/moc_my_paint.o: debug/moc_my_paint.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\moc_my_paint.o debug\moc_my_paint.cpp
 
 ####### Install
 

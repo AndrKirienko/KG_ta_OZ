@@ -30,11 +30,11 @@ struct qt_meta_stringdata_MainWindow_t {
 static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
     {
 QT_MOC_LITERAL(0, 0, 10), // "MainWindow"
-QT_MOC_LITERAL(1, 11, 21), // "on_pushButton_clicked"
+QT_MOC_LITERAL(1, 11, 21), // "on_drawButton_clicked"
 QT_MOC_LITERAL(2, 33, 0) // ""
 
     },
-    "MainWindow\0on_pushButton_clicked\0"
+    "MainWindow\0on_drawButton_clicked\0"
 };
 #undef QT_MOC_LITERAL
 
@@ -65,7 +65,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
     if (_c == QMetaObject::InvokeMetaMethod) {
         MainWindow *_t = static_cast<MainWindow *>(_o);
         switch (_id) {
-        case 0: _t->on_pushButton_clicked(); break;
+        case 0: _t->on_drawButton_clicked(); break;
         default: ;
         }
     }
