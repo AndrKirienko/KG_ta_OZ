@@ -89,7 +89,6 @@ void My_Paint::scene()
     drawCircle(60.0, 190.0, 5.0);
     glDisable(GL_LINE_SMOOTH);
 
-
     //верхня лінія
 
     glEnable(GL_LINE_SMOOTH);
@@ -104,7 +103,21 @@ void My_Paint::scene()
     glVertex3f(60.0, 190.0, 0.0);
     glEnd();
 
-    //верхня лінія
+    //нижнє-нижнє коло
+    glEnable(GL_LINE_SMOOTH);
+    glHint(GL_LINE_SMOOTH_HINT, GL_NICEST);
+    glColor3f(0.0, 0.0, 0.0);
+    drawCircle(50.0, 40.0, 5.0);
+    glDisable(GL_LINE_SMOOTH);
+
+    //нижнє-верхнє коло
+    glEnable(GL_LINE_SMOOTH);
+    glHint(GL_LINE_SMOOTH_HINT, GL_NICEST);
+    glColor3f(0.0, 0.0, 0.0);
+    drawCircle(115.0, 70.0, 5.0);
+    glDisable(GL_LINE_SMOOTH);
+
+    //нижня лінія
     glLineWidth(10.0);
 
     glColor3f(0.0, 0.0, 0.0);
