@@ -22,7 +22,7 @@ void drawCircle(float cx, float cy, float radius, int segments = 36) {
 void My_Paint::initializeGL()
 {
     initializeOpenGLFunctions();
-    glClearColor(0.0, 128.0, 128.0, 1.0);
+    glClearColor(0.0, 50.0, 50.0, 1.0);
     glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 }
 
