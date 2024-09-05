@@ -42,6 +42,15 @@ void My_Paint::scene()
     glVertex3f(135.0, 15.0, 0.0);
     glEnd();
 
+    //жовтий трикутник
+    glColor3f(255.0, 255.0, 0.0);
+
+    glBegin(GL_POLYGON);
+    glVertex3f(245.0, 85.0, 0.0);
+    glVertex3f(290.0, 100.0, 0.0);
+    glVertex3f(265.0, 45.0, 0.0);
+    glEnd();
+
     // Інші елементи сцени
 
     //Стрілка вгору
