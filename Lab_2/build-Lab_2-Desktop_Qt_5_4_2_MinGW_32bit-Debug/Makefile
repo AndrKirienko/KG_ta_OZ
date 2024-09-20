@@ -182,6 +182,7 @@ Makefile: ../Lab_2/Lab_2.pro ../../../../Educational_Programmes/OpenGL/5.4/mingw
 		../Lab_2/Lab_2.pro \
 		D:/Educational_Programmes/OpenGL/5.4/mingw491_32/lib/qtmaind.prl \
 		D:/Educational_Programmes/OpenGL/5.4/mingw491_32/lib/Qt5Cored.prl \
+		D:/Educational_Programmes/OpenGL/5.4/mingw491_32/lib/Qt5OpenGL.prl \
 		D:/Educational_Programmes/OpenGL/5.4/mingw491_32/lib/Qt5Widgets.prl \
 		D:/Educational_Programmes/OpenGL/5.4/mingw491_32/lib/Qt5Gui.prl \
 		D:/Educational_Programmes/OpenGL/5.4/mingw491_32/lib/Qt5Core.prl
@@ -309,6 +310,7 @@ Makefile: ../Lab_2/Lab_2.pro ../../../../Educational_Programmes/OpenGL/5.4/mingw
 ..\Lab_2\Lab_2.pro:
 D:/Educational_Programmes/OpenGL/5.4/mingw491_32/lib/qtmaind.prl:
 D:/Educational_Programmes/OpenGL/5.4/mingw491_32/lib/Qt5Cored.prl:
+D:/Educational_Programmes/OpenGL/5.4/mingw491_32/lib/Qt5OpenGL.prl:
 D:/Educational_Programmes/OpenGL/5.4/mingw491_32/lib/Qt5Widgets.prl:
 D:/Educational_Programmes/OpenGL/5.4/mingw491_32/lib/Qt5Gui.prl:
 D:/Educational_Programmes/OpenGL/5.4/mingw491_32/lib/Qt5Core.prl:

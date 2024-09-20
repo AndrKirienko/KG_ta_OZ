@@ -1,24 +1,22 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2024-09-20T13:49:14
+# Project created by QtCreator 2024-09-10T13:04:16
 #
 #-------------------------------------------------
 
-QT       += core gui
-QT += widgets opengl
-
+QT       += core gui opengl
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = Lab_2
+TARGET = lab2
 TEMPLATE = app
 
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    openglwidget.cpp
+    mainscene.cpp
 
 HEADERS  += mainwindow.h \
-    openglwidget.h
+    mainscene.h
 
 FORMS    += mainwindow.ui
