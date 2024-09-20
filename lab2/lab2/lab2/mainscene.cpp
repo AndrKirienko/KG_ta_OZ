@@ -131,31 +131,36 @@ glVertex3f(0.4, 0.7, 0.2);//5
 glVertex3f(0.4, 0.7, 0.3);//5z
 glVertex3f(0.2, 0.4, 0.3);//4z
 
-qglColor(Qt::green);
-glVertex3f(0.4, 0.55, 0.2);//5
-glVertex3f(0.4, 0.6, 0.2);//6
-glVertex3f(0.4, 0.6, 0.3);//6z
-glVertex3f(0.4, 0.55, 0.3);//5z
-qglColor(Qt::green);
-glVertex3f(0.4, 0.6, 0.2);//6
-glVertex3f(0.2, 0.6, 0.2);//7
-glVertex3f(0.2, 0.6, 0.3);//7z
-glVertex3f(0.4, 0.6, 0.2);//6z
-qglColor(Qt::green);
-glVertex3f(0.2, 0.6, 0.2);//7
-glVertex3f(0.2, 0.4, 0.2);//8
-glVertex3f(0.2, 0.4, 0.3);//8z
-glVertex3f(0.2, 0.6, 0.3);//7z
-qglColor(Qt::green);
-glVertex3f(0.2, 0.4, 0.2);//8
-glVertex3f(0.3, 0.4, 0.2);//9
-glVertex3f(0.3, 0.4, 0.3);//9z
-glVertex3f(0.2, 0.4, 0.3);//8z
-qglColor(Qt::green);
-glVertex3f(0.3, 0.4, 0.2);//9
-glVertex3f(0.3, 0.3, 0.2);//10
-glVertex3f(0.3, 0.3, 0.3);//10z
-glVertex3f(0.3, 0.4, 0.3);//9z
+qglColor(Qt::red);
+glVertex3f(0.4, 0.7, 0.2);//5
+glVertex3f(0.5, 0.7, 0.2);//6
+glVertex3f(0.6, 0.7, 0.3);//6z
+glVertex3f(0.4, 0.7, 0.3);//5z
+
+qglColor(Qt::red);
+glVertex3f(0.5, 0.7, 0.2);//6
+glVertex3f(0.3, 0.4, 0.2);//7
+glVertex3f(0.3, 0.4, 0.3);//7z
+glVertex3f(0.5, 0.7, 0.2);//6z
+
+qglColor(Qt::red);
+glVertex3f(0.3, 0.4, 0.2);//7
+glVertex3f(0.5, 0.1, 0.2);//8
+glVertex3f(0.5, 0.1, 0.3);//8z
+glVertex3f(0.3, 0.4, 0.3);//7z
+
+qglColor(Qt::red);
+glVertex3f(0.5, 0.1, 0.2);//8
+glVertex3f(0.4, 0.1, 0.2);//9
+glVertex3f(0.4, 0.1, 0.3);//9z
+glVertex3f(0.5, 0.1, 0.3);//8z
+
+qglColor(Qt::red);
+glVertex3f(0.4, 0.1, 0.2);//9
+glVertex3f(0.2, 0.4, 0.2);//4
+glVertex3f(0.2, 0.4, 0.3);//4z
+glVertex3f(0.4, 0.1, 0.3);//9z
+
 qglColor(Qt::green);
 glVertex3f(0.3, 0.3, 0.2);//10
 glVertex3f(0.2, 0.3, 0.2);//11
