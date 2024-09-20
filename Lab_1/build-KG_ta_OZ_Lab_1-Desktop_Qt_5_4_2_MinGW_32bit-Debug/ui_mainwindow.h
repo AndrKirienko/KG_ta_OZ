@@ -13,6 +13,7 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QDialogButtonBox>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
@@ -29,6 +30,7 @@ public:
     QPushButton *drawButton;
     QLabel *label;
     QLabel *label_2;
+    QDialogButtonBox *buttonBox;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -54,6 +56,10 @@ public:
         label_2 = new QLabel(centralWidget);
         label_2->setObjectName(QStringLiteral("label_2"));
         label_2->setGeometry(QRect(20, 50, 351, 101));
+        buttonBox = new QDialogButtonBox(centralWidget);
+        buttonBox->setObjectName(QStringLiteral("buttonBox"));
+        buttonBox->setGeometry(QRect(10, 220, 193, 28));
+        buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
         MainWindow->setCentralWidget(centralWidget);
 
         retranslateUi(MainWindow);

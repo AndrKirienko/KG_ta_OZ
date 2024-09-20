@@ -9,7 +9,7 @@ My_Paint::My_Paint(QWidget *parent)
 
 void drawCircle(float cx, float cy, float radius, int segments = 36) {
     glBegin(GL_TRIANGLE_FAN);
-    glVertex2f(cx, cy); // Центр кола
+    glVertex2f(cx, cy);
     for (int i = 0; i <= segments; ++i) {
         float angle = 2.0f * M_PI * i / segments;
         float x = cx + radius * cosf(angle);
@@ -57,7 +57,7 @@ void My_Paint::scene()
     glEnd();
 
     //жовтий трикутник
-    glColor3f(255.0, 255.0, 0.0);
+    glColor3f(0.0, 255.0, 0.0);
 
     glBegin(GL_POLYGON);
     glVertex3f(245.0, 85.0, 0.0);
