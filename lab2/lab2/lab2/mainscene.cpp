@@ -376,30 +376,66 @@ glVertex3f(0.7, 0.7, 0.2);//4
 glVertex3f(0.7, 0.7, 0.3);//4z
 glVertex3f(0.9, 0.7, 0.3);//5z
 
-glVertex3f(0.85, 0.25, 0.2);//11
-glVertex3f(0.65, 0.25, 0.2);//8
-glVertex3f(0.65, 0.25, 0.3);//8z
-glVertex3f(0.85, 0.25, 0.3);//11z
-glVertex3f(0.5, 0.1, 0.2);//7
-glVertex3f(0.65, 0.25, 0.2);//8
-glVertex3f(0.65, 0.25, 0.3);//8z
-glVertex3f(0.5, 0.1, 0.3);//7z
-glVertex3f(0.5, 0.1, 0.2);// 1
-glVertex3f(0.5, 0.1, 0.2);//7
-glVertex3f(0.5, 0.1, 0.3);//7z
-glVertex3f(0.5, 0.1, 0.3);// 1z
-glVertex3f(0.675, 0.35, 0.2);//9
-glVertex3f(0.75, 0.55, 0.2);//6
-glVertex3f(0.75, 0.55, 0.3);//6z
-glVertex3f(0.675, 0.35, 0.3);//9z
-glVertex3f(0.75, 0.55, 0.2);//6
-glVertex3f(0.825, 0.35, 0.2);//10
-glVertex3f(0.825, 0.35, 0.3);//10z
-glVertex3f(0.75, 0.55, 0.3);//6z
-glVertex3f(0.675, 0.35, 0.2);//9
-glVertex3f(0.825, 0.35, 0.2);//10
-glVertex3f(0.825, 0.35, 0.3);//10z
-glVertex3f(0.675, 0.35, 0.3);//9z
+glVertex3f(1, 0.6, 0.2);//6
+glVertex3f(0.9, 0.7, 0.2);//5
+glVertex3f(0.9, 0.7, 0.3);//5z
+glVertex3f(1, 0.6, 0.3);//6z
+
+glVertex3f(1, 0.2, 0.2);//7
+glVertex3f(1, 0.6, 0.2);//6
+glVertex3f(1, 0.6, 0.3);//6z
+glVertex3f(1, 0.2, 0.3);//7z
+
+glVertex3f(1, 0.2, 0.2);//7
+glVertex3f(0.9, 0.1, 0.2);//8
+glVertex3f(0.9, 0.1, 0.3);//8z
+glVertex3f(1, 0.2, 0.3);//7z
+
+glVertex3f(0.7, 0.1, 0.2);// 1
+glVertex3f(0.9, 0.1, 0.2);//8
+glVertex3f(0.9, 0.1, 0.3);//8z
+glVertex3f(0.7, 0.1, 0.3);// 1z
+
+glVertex3f(0.75, 0.2, 0.2);//9
+glVertex3f(0.7, 0.25, 0.2);//10
+glVertex3f(0.7, 0.25, 0.3);//10z
+glVertex3f(0.75, 0.2, 0.3);//9z
+
+glVertex3f(0.7, 0.55, 0.2);//11
+glVertex3f(0.7, 0.25, 0.2);//10
+glVertex3f(0.7, 0.25, 0.3);//10z
+glVertex3f(0.7, 0.55, 0.3);//11z
+
+glVertex3f(0.7, 0.55, 0.2);//11
+glVertex3f(0.75, 0.6, 0.2);//12
+glVertex3f(0.75, 0.6, 0.3);//12z
+glVertex3f(0.7, 0.55, 0.3);//11z
+
+glVertex3f(0.75, 0.6, 0.2);//12
+glVertex3f(0.85, 0.6, 0.2);//13
+glVertex3f(0.85, 0.6, 0.3);//13z
+glVertex3f(0.75, 0.6, 0.3);//12z
+
+glVertex3f(0.85, 0.6, 0.2);//13
+glVertex3f(0.9, 0.55, 0.2);//14
+glVertex3f(0.9, 0.55, 0.3);//14z
+glVertex3f(0.85, 0.6, 0.3);//13z
+
+glVertex3f(0.9, 0.55, 0.2);//14
+glVertex3f(0.9, 0.25, 0.2);//15
+glVertex3f(0.9, 0.25, 0.3);//15z
+glVertex3f(0.9, 0.55, 0.3);//14z
+
+glVertex3f(0.9, 0.25, 0.2);//15
+glVertex3f(0.85, 0.2, 0.2);//16
+glVertex3f(0.85, 0.2, 0.3);//16z
+glVertex3f(0.9, 0.25, 0.3);//15z
+
+glVertex3f(0.75, 0.2, 0.2);//9
+glVertex3f(0.85, 0.2, 0.2);//16
+glVertex3f(0.85, 0.2, 0.3);//16z
+glVertex3f(0.75, 0.2, 0.3);//9z
+
 glEnd();
 
 glLineWidth(2.0); //координати меж літери A
