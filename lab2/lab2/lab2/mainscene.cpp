@@ -105,27 +105,32 @@ glVertex3f(0.2, 0.4, 0.3);//4
 glVertex3f(0.4, 0.1, 0.3);//9
 glVertex3f(0.5, 0.1, 0.3);//8
 glVertex3f(0.3, 0.4, 0.3);//7
-//F- бокові частини
-qglColor(Qt::green);
+
+//K- бокові частини
+qglColor(Qt::red);
 glVertex3f(0.1, 0.1, 0.2);//1
 glVertex3f(0.1, 0.7, 0.2);//2
 glVertex3f(0.1, 0.7, 0.3);//2z
 glVertex3f(0.1, 0.1, 0.3);//1z
-qglColor(Qt::green);
+
+qglColor(Qt::red);
 glVertex3f(0.1, 0.7, 0.2);//2
-glVertex3f(0.5, 0.7, 0.2);//3
-glVertex3f(0.5, 0.7, 0.3);//3z
+glVertex3f(0.2, 0.7, 0.2);//3
 glVertex3f(0.1, 0.7, 0.3);//2z
-qglColor(Qt::green);
-glVertex3f(0.5, 0.7, 0.2);//3
-glVertex3f(0.5, 0.55, 0.2);//4
-glVertex3f(0.5, 0.55, 0.3);//4z
-glVertex3f(0.5, 0.7, 0.3);//3z
-qglColor(Qt::green);
-glVertex3f(0.5, 0.55, 0.2);//4
-glVertex3f(0.4, 0.55, 0.2);//5
-glVertex3f(0.4, 0.55, 0.3);//5z
-glVertex3f(0.5, 0.55, 0.3);//4z
+glVertex3f(0.2, 0.7, 0.3);//3z
+
+qglColor(Qt::red);
+glVertex3f(0.2, 0.7, 0.2);//3
+glVertex3f(0.2, 0.4, 0.2);//4
+glVertex3f(0.2, 0.4, 0.3);//4z
+glVertex3f(0.2, 0.7, 0.3);//3z
+
+qglColor(Qt::red);
+glVertex3f(0.2, 0.4, 0.2);//4
+glVertex3f(0.4, 0.7, 0.2);//5
+glVertex3f(0.4, 0.7, 0.3);//5z
+glVertex3f(0.2, 0.4, 0.3);//4z
+
 qglColor(Qt::green);
 glVertex3f(0.4, 0.55, 0.2);//5
 glVertex3f(0.4, 0.6, 0.2);//6
@@ -182,13 +187,13 @@ glBegin(GL_LINE_STRIP);
 glVertex3f(0.1, 0.1, 0.3);//1
 glVertex3f(0.1, 0.7, 0.3);//2
 glVertex3f(0.2, 0.7, 0.3);//3
-glVertex3f(0.2, 0.45, 0.3);//4
+glVertex3f(0.2, 0.4, 0.3);//4
 glVertex3f(0.4, 0.7, 0.3);//5
 glVertex3f(0.5, 0.7, 0.3);//6
-glVertex3f(0.3, 0.45, 0.3);//7
+glVertex3f(0.3, 0.4, 0.3);//7
 glVertex3f(0.5, 0.1, 0.3);//8
 glVertex3f(0.4, 0.1, 0.3);//9
-glVertex3f(0.2, 0.45, 0.3);//4
+glVertex3f(0.2, 0.4, 0.3);//4
 glVertex3f(0.2, 0.1, 0.3);//10
 glVertex3f(0.1, 0.1, 0.3);//1
 glEnd();
