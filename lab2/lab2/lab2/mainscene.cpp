@@ -438,7 +438,7 @@ glVertex3f(0.75, 0.2, 0.3);//9z
 
 glEnd();
 
-glLineWidth(2.0); //координати меж літери A
+glLineWidth(2.0); //координати меж літери O
 glColor3f(1,1,1);
 glBegin(GL_LINE_STRIP);
 glVertex3f(0.7, 0.1, 0.2);// 1
