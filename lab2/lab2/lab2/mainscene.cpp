@@ -30,7 +30,7 @@ figureGL::figureGL(int r, int g, int b)
 void figureGL::initializeGL()
 {
 //Задаємо колір фону в OpenGL вікні
-qglClearColor(Qt::black);
+qglClearColor(Qt::yellow);
 }
 void figureGL::initializeGL(QColor rgb)
 {
@@ -70,10 +70,10 @@ void figureGL::scene()
 glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT ); // Очистити екран і буфер глибини
 glLoadIdentity();
 glTranslatef(0.0, 0.0,0.0);
-glRotatef(rc, 0.0, 1.0, 0.0f); // функція обертання
+glRotatef(rc, 1.0, 1.0, 0.0f); // функція обертання
 glBegin(GL_QUADS); // створюємо букву квадратними полігонами
 //К – передня частина
-qglColor(Qt::red); // заливаємо червоним кольором
+qglColor(Qt::cyan); // заливаємо червоним кольором
 glVertex3f(0.1, 0.1, 0.2);//1
 glVertex3f(0.1, 0.7, 0.2);//2
 glVertex3f(0.2, 0.7, 0.2);//3
@@ -90,7 +90,7 @@ glVertex3f(0.5, 0.1, 0.2);//8
 glVertex3f(0.3, 0.4, 0.2);//7
 
 //К-задня частина
-qglColor(Qt::red);
+qglColor(Qt::blue);
 glVertex3f(0.1, 0.1, 0.3);//1
 glVertex3f(0.1, 0.7, 0.3);//2
 glVertex3f(0.2, 0.7, 0.3);//3
@@ -107,67 +107,57 @@ glVertex3f(0.5, 0.1, 0.3);//8
 glVertex3f(0.3, 0.4, 0.3);//7
 
 //K- бокові частини
-qglColor(Qt::red);
+qglColor(Qt::green);
 glVertex3f(0.1, 0.1, 0.2);//1
 glVertex3f(0.1, 0.7, 0.2);//2
 glVertex3f(0.1, 0.7, 0.3);//2z
 glVertex3f(0.1, 0.1, 0.3);//1z
 
-qglColor(Qt::red);
 glVertex3f(0.1, 0.7, 0.2);//2
 glVertex3f(0.2, 0.7, 0.2);//3
-glVertex3f(0.1, 0.7, 0.3);//2z
 glVertex3f(0.2, 0.7, 0.3);//3z
+glVertex3f(0.1, 0.7, 0.3);//2z
 
-qglColor(Qt::red);
 glVertex3f(0.2, 0.7, 0.2);//3
 glVertex3f(0.2, 0.4, 0.2);//4
 glVertex3f(0.2, 0.4, 0.3);//4z
 glVertex3f(0.2, 0.7, 0.3);//3z
 
-qglColor(Qt::red);
 glVertex3f(0.2, 0.4, 0.2);//4
 glVertex3f(0.4, 0.7, 0.2);//5
 glVertex3f(0.4, 0.7, 0.3);//5z
 glVertex3f(0.2, 0.4, 0.3);//4z
 
-qglColor(Qt::red);
 glVertex3f(0.4, 0.7, 0.2);//5
 glVertex3f(0.5, 0.7, 0.2);//6
-glVertex3f(0.6, 0.7, 0.3);//6z
+glVertex3f(0.5, 0.7, 0.3);//6z
 glVertex3f(0.4, 0.7, 0.3);//5z
 
-qglColor(Qt::red);
 glVertex3f(0.5, 0.7, 0.2);//6
 glVertex3f(0.3, 0.4, 0.2);//7
 glVertex3f(0.3, 0.4, 0.3);//7z
-glVertex3f(0.5, 0.7, 0.2);//6z
+glVertex3f(0.5, 0.7, 0.3);//6z
 
-qglColor(Qt::red);
 glVertex3f(0.3, 0.4, 0.2);//7
 glVertex3f(0.5, 0.1, 0.2);//8
 glVertex3f(0.5, 0.1, 0.3);//8z
 glVertex3f(0.3, 0.4, 0.3);//7z
 
-qglColor(Qt::red);
 glVertex3f(0.5, 0.1, 0.2);//8
 glVertex3f(0.4, 0.1, 0.2);//9
 glVertex3f(0.4, 0.1, 0.3);//9z
 glVertex3f(0.5, 0.1, 0.3);//8z
 
-qglColor(Qt::red);
 glVertex3f(0.4, 0.1, 0.2);//9
 glVertex3f(0.2, 0.4, 0.2);//4
 glVertex3f(0.2, 0.4, 0.3);//4z
 glVertex3f(0.4, 0.1, 0.3);//9z
 
-qglColor(Qt::red);
 glVertex3f(0.2, 0.1, 0.2);//10
 glVertex3f(0.2, 0.4, 0.2);//4
 glVertex3f(0.2, 0.4, 0.3);//4z
 glVertex3f(0.2, 0.1, 0.3);//10z
 
-qglColor(Qt::red);
 glVertex3f(0.1, 0.1, 0.2);//1
 glVertex3f(0.2, 0.1, 0.2);//10
 glVertex3f(0.2, 0.1, 0.3);//10z
@@ -207,6 +197,7 @@ glVertex3f(0.2, 0.4, 0.3);//4z
 glVertex3f(0.2, 0.1, 0.3);//10z
 glVertex3f(0.1, 0.1, 0.3);//1z
 glEnd();
+
 glBegin(GL_LINE_STRIP); // (GL_LINE_STRIP)-лінія з 2х точок
 glVertex3f(0.1, 0.1, 0.2); //1
 glVertex3f(0.1, 0.1, 0.3); //1z
@@ -256,106 +247,94 @@ glBegin(GL_LINE_STRIP);
 glVertex3f(0.2, 0.1, 0.2);//10
 glVertex3f(0.2, 0.1, 0.3);//10z
 glEnd();
+glRotatef(rc, 0.0, 1.0, 0.0f); // функція обертання
 //О – передня частина
 glBegin(GL_QUADS);
-qglColor(Qt::red);
+qglColor(Qt::magenta);
 glVertex3f(0.7, 0.1, 0.2);// 1
 glVertex3f(0.6, 0.2, 0.2);//2
 glVertex3f(0.7, 0.25, 0.2);//10
 glVertex3f(0.75, 0.2, 0.2);//9
 
-qglColor(Qt::red);
 glVertex3f(0.6, 0.2, 0.2);//2
 glVertex3f(0.7, 0.25, 0.2);//10
 glVertex3f(0.7, 0.55, 0.2);//11
 glVertex3f(0.6, 0.6, 0.2);//3
 
-qglColor(Qt::red);
 glVertex3f(0.6, 0.6, 0.2);//3
 glVertex3f(0.7, 0.55, 0.2);//11
 glVertex3f(0.75, 0.6, 0.2);//12
 glVertex3f(0.7, 0.7, 0.2);//4
 
-qglColor(Qt::red);
 glVertex3f(0.75, 0.6, 0.2);//12
 glVertex3f(0.7, 0.7, 0.2);//4
 glVertex3f(0.9, 0.7, 0.2);//5
 glVertex3f(0.85, 0.6, 0.2);//13
 
-qglColor(Qt::red);
 glVertex3f(0.85, 0.6, 0.2);//13
 glVertex3f(0.9, 0.7, 0.2);//5
 glVertex3f(1, 0.6, 0.2);//6
 glVertex3f(0.9, 0.55, 0.2);//14
 
-qglColor(Qt::red);
 glVertex3f(0.9, 0.55, 0.2);//14
 glVertex3f(1, 0.6, 0.2);//6
 glVertex3f(1, 0.2, 0.2);//7
 glVertex3f(0.9, 0.25, 0.2);//15
 
-qglColor(Qt::red);
 glVertex3f(0.9, 0.25, 0.2);//15
 glVertex3f(1, 0.2, 0.2);//7
 glVertex3f(0.9, 0.1, 0.2);//8
 glVertex3f(0.85, 0.2, 0.2);//16
 
-qglColor(Qt::red);
 glVertex3f(0.9, 0.1, 0.2);//8
 glVertex3f(0.85, 0.2, 0.2);//16
 glVertex3f(0.75, 0.2, 0.2);//9
 glVertex3f(0.7, 0.1, 0.2);//1
 
 //O-задня частина
-qglColor(Qt::red);
+qglColor(Qt::white);
 glVertex3f(0.7, 0.1, 0.3);// 1z
 glVertex3f(0.6, 0.2, 0.3);//2z
 glVertex3f(0.7, 0.25, 0.3);//10z
 glVertex3f(0.75, 0.2, 0.3);//9z
 
-qglColor(Qt::red);
 glVertex3f(0.6, 0.2, 0.3);//2z
 glVertex3f(0.7, 0.25, 0.3);//10z
 glVertex3f(0.7, 0.55, 0.3);//11z
 glVertex3f(0.6, 0.6, 0.3);//3z
 
-qglColor(Qt::red);
 glVertex3f(0.6, 0.6, 0.3);//3z
 glVertex3f(0.7, 0.55, 0.3);//11z
 glVertex3f(0.75, 0.6, 0.3);//12z
 glVertex3f(0.7, 0.7, 0.3);//4z
 
-qglColor(Qt::red);
 glVertex3f(0.75, 0.6, 0.3);//12z
 glVertex3f(0.7, 0.7, 0.3);//4z
 glVertex3f(0.9, 0.7, 0.3);//5z
 glVertex3f(0.85, 0.6, 0.3);//13z
 
-qglColor(Qt::red);
 glVertex3f(0.85, 0.6, 0.3);//13z
 glVertex3f(0.9, 0.7, 0.3);//5z
 glVertex3f(1, 0.6, 0.3);//6z
 glVertex3f(0.9, 0.55, 0.3);//14z
 
-qglColor(Qt::red);
 glVertex3f(0.9, 0.55, 0.3);//14z
 glVertex3f(1, 0.6, 0.3);//6z
 glVertex3f(1, 0.2, 0.3);//7z
 glVertex3f(0.9, 0.25, 0.3);//15z
 
-qglColor(Qt::red);
 glVertex3f(0.9, 0.25, 0.3);//15z
 glVertex3f(1, 0.2, 0.3);//7z
 glVertex3f(0.9, 0.1, 0.3);//8z
 glVertex3f(0.85, 0.2, 0.3);//16z
 
-qglColor(Qt::red);
 glVertex3f(0.9, 0.1, 0.3);//8z
 glVertex3f(0.85, 0.2, 0.3);//16z
 glVertex3f(0.75, 0.2, 0.3);//9z
 glVertex3f(0.7, 0.1, 0.3);//1z
 
 //O- бокові частини
+qglColor(Qt::darkCyan);
 glVertex3f(0.7, 0.1, 0.2);// 1
 glVertex3f(0.6, 0.2, 0.2);//2
 glVertex3f(0.6, 0.2, 0.3);//2z
@@ -439,7 +418,7 @@ glVertex3f(0.75, 0.2, 0.3);//9z
 glEnd();
 
 glLineWidth(2.0); //координати меж літери O
-glColor3f(1,1,1);
+glColor3f(0,0,0);
 glBegin(GL_LINE_STRIP);
 glVertex3f(0.7, 0.1, 0.2);// 1
 glVertex3f(0.6, 0.2, 0.2);//2
