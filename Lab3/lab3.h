@@ -19,6 +19,13 @@ protected:
 private:
     GLuint loadTexture(const char* filename);  // Загрузка текстуры
     void drawPolygonPrism(int sides);          // Рисование призмы
+
+private:
+    float rotationAngle;  // Угол вращения
+    QTimer *timer;        // Таймер для обновления сцены
+
 };
+
+
 
 #endif // LAB3_H

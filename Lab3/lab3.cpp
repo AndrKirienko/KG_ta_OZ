@@ -2,8 +2,13 @@
 #include <GL/gl.h>
 #include <GL/glu.h>
 #include <QImage>
+#include <QTimer>
 
-Lab3::Lab3(QWidget *parent) : QGLWidget(parent) {}
+Lab3::Lab3(QWidget *parent) : QGLWidget(parent), rotationAngle(0.0f) {
+    timer = new QTimer(this);
+    connect(timer, SIGNAL(timeout()), this, SLOT(updateGL()));  // Обновление через слот
+    timer->start(16);  // 60 FPS
+}
 
 void Lab3::initializeGL() {
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f);  // Чёрный фон
@@ -27,12 +32,20 @@ void Lab3::paintGL() {
     glLoadIdentity();
     glTranslatef(0.0f, 0.0f, -5.0f);  // Смещение камеры
 
+    // Применение вращения
+    glRotatef(rotationAngle, 0.0f, 1.0f, 0.0f);  // Вращение вокруг оси Y
+
     // Загрузка и привязка текстуры
     glBindTexture(GL_TEXTURE_2D, loadTexture("resources/texture.jpg"));
 
     // Рисование призмы с 9 углами
     drawPolygonPrism(9);
-   // swapBuffers();
+
+    // Обновление угла вращения для следующего кадра
+    rotationAngle += 1.0f;
+    if (rotationAngle >= 360.0f) {
+        rotationAngle = 0.0f;  // Сброс угла при полном обороте
+    }
 }
 
 GLuint Lab3::loadTexture(const char* filename) {
