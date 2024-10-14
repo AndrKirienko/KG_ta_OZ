@@ -2,21 +2,23 @@
 #define LAB3_H
 
 #include <QMainWindow>
+#include <QGLWidget>
+#include <QImage>
 
-namespace Ui {
-class lab3;
-}
-
-class lab3 : public QMainWindow
-{
+class Lab3 : public QGLWidget {
     Q_OBJECT
 
 public:
-    explicit lab3(QWidget *parent = 0);
-    ~lab3();
+    Lab3(QWidget *parent = NULL);
+
+protected:
+    void initializeGL() override;
+    void resizeGL(int w, int h) override;
+    void paintGL() override;
 
 private:
-    Ui::lab3 *ui;
+    GLuint loadTexture(const char* filename);  // Загрузка текстуры
+    void drawPolygonPrism(int sides);          // Рисование призмы
 };
 
 #endif // LAB3_H

@@ -1,11 +1,12 @@
-#include "lab3.h"
 #include <QApplication>
+#include "lab3.h"
 
-int main(int argc, char *argv[])
-{
-    QApplication a(argc, argv);
-    lab3 w;
-    w.show();
+int main(int argc, char *argv[]) {
+    QApplication app(argc, argv);
 
-    return a.exec();
+    Lab3 widget;
+    widget.resize(800, 600);  // Размер окна
+    widget.show();
+
+    return app.exec();
 }
