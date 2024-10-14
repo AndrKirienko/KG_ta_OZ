@@ -11,11 +11,42 @@ Lab3::Lab3(QWidget *parent) : QGLWidget(parent), rotationAngle(0.0f) {
 }
 
 void Lab3::initializeGL() {
-    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);  // Чёрный фон
+    glClearColor(1, 1, 1, 1);  // Чёрный фон
     glEnable(GL_DEPTH_TEST);               // Включение теста глубины
     glEnable(GL_LIGHTING);                 // Включение освещения
-    glEnable(GL_LIGHT0);                   // Источник света
+    glEnable(GL_LIGHT0);                    // Включение первого источника света (красный)
+    glEnable(GL_LIGHT1);                    // Включение второго источника света (голубой)
+    glEnable(GL_LIGHT2);                    // Включение третьего источника света (зелёный)
+    glEnable(GL_LIGHT3);
     glEnable(GL_TEXTURE_2D);               // Включение текстур
+
+    // Параметры для красного света (верхний полигон)
+    GLfloat redLightPosition[] = { 0, 0, 1, 0 }; // Позиция света
+    GLfloat redLightColor[] = { 1, 0, 0, 0.1 };    // Красный
+
+    glLightfv(GL_LIGHT0, GL_POSITION, redLightPosition);
+    glLightfv(GL_LIGHT0, GL_DIFFUSE, redLightColor); // Дифузный свет
+
+    // Параметры для голубого света (нижний полигон)
+    GLfloat greenLightPosition[] = { 0, 0, -4, 0 }; // Позиция света
+    GLfloat greenLightColor[] = { 0, 1, 0, 0.1 };    // Зеленый
+
+    glLightfv(GL_LIGHT1, GL_POSITION, greenLightPosition);
+    glLightfv(GL_LIGHT1, GL_DIFFUSE, greenLightColor); // Дифузный свет
+
+    // Параметры для зелёного света (боковые грани слева)
+    GLfloat yellowLightPosition[] = { 1, 0, 0, 0 }; // Позиция света
+    GLfloat yellowLightColor[] = { 1, 1, 0, 0.1 };    // Жёлтый
+
+    glLightfv(GL_LIGHT2, GL_POSITION, yellowLightPosition);
+    glLightfv(GL_LIGHT2, GL_DIFFUSE, yellowLightColor); // Дифузный свет
+
+    // Параметры для зелёного света (боковые грани слева)
+    GLfloat blueLightPosition[] = { -2, 0, 0, 0 }; // Позиция света
+    GLfloat blueLightColor[] = { 0, 0, 1, 0.1 };    // Жёлтый
+
+    glLightfv(GL_LIGHT3, GL_POSITION, blueLightPosition);
+    glLightfv(GL_LIGHT3, GL_DIFFUSE, blueLightColor); // Дифузный свет
 }
 
 void Lab3::resizeGL(int w, int h) {
@@ -40,6 +71,7 @@ void Lab3::paintGL() {
 
     // Рисование призмы с 9 углами
     drawPolygonPrism(9);
+
 
     // Обновление угла вращения для следующего кадра
     rotationAngle += 1.0f;
