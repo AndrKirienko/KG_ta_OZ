@@ -7,7 +7,7 @@
 Lab3::Lab3(QWidget *parent) : QGLWidget(parent), rotationAngle(0.0f) {
     timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(updateGL()));
-    timer->start(16);  // 60 FPS
+    timer->start(0);  // 60 FPS
 }
 
 void Lab3::initializeGL() {
