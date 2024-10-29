@@ -24,7 +24,7 @@ void ExplosionSimulation::startExplosion()
 void ExplosionSimulation::initializeGL()
 {
     glEnable(GL_DEPTH_TEST); // Включення тесту глибини
-    glClearColor(0.0, 0.0, 0.0, 1.0); // Встановлення кольору фону (чорний)
+    glClearColor(1.0, 1.0, 1.0, 1.0); // Встановлення кольору фону (чорний)
 }
 
 // Метод для малювання сцени OpenGL
@@ -84,7 +84,7 @@ void ExplosionSimulation::updateParticles()
             particles[i].x += particles[i].xi;
             particles[i].y += particles[i].yi;
             particles[i].z += particles[i].zi;
-            particles[i].yi -= -0.0008f;  // Гравітація (вплив на Y-вісь)
+            particles[i].yi -= 0.0008f;  // Гравітація (вплив на Y-вісь)
             particles[i].life -= particles[i].fade; // Зменшення тривалості життя
         } else {
             // Скидання частинки, якщо вона "мертва"
